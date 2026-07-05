@@ -20,6 +20,19 @@ export function Footer() {
             by LamprosDAO. Learn blockchain fundamentals through interactive
             explainers, live data, and a hands-on mining simulator.
           </p>
+          <div className="mt-6 text-sm">
+            <p className="font-semibold text-foreground">Shravan Davda</p>
+            <p className="text-muted-foreground">MSU FTE CSE · Arbitrum Builder Pods</p>
+            <a
+              href="https://github.com/ShravanDavda"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 mt-1 text-primary hover:text-accent transition-colors"
+            >
+              <Github className="w-3.5 h-3.5" />
+              github.com/ShravanDavda
+            </a>
+          </div>
           <div className="mt-6 flex gap-3">
             <a
               href="https://github.com"
