@@ -1,28 +1,30 @@
-# 🚀 ArbChain – Interactive Web3 Learning Platform
+<div align="center">
 
-> Learn Blockchain visually through live crypto prices, Web3 concepts, and an interactive blockchain simulator.
+# 🚀 ArbChain
 
-![React](https://img.shields.io/badge/React-19-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![Vite](https://img.shields.io/badge/Vite-7-purple)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8)
-![License](https://img.shields.io/badge/License-MIT-green)
+### Interactive Web3 Learning Platform
 
----
+Explore blockchain technology through interactive visualizations, live cryptocurrency prices, educational comparisons, and a blockchain simulator.
 
-## 🌐 Live Demo
+🌐 **Live Demo:** https://arbitrum-web3.vercel.app/
 
-🔗 https://arbitrum-web3.lovable.app
-
-> (Later we'll replace this with the Vercel link.)
+</div>
 
 ---
 
-# 📖 About
+## 📖 Overview
 
-ArbChain is a modern educational Web3 platform built to simplify blockchain concepts through interactive visualizations instead of static text.
+**ArbChain** is an interactive educational platform designed to make Web3 concepts easier to understand through beautiful visuals and hands-on learning.
 
-The website combines educational content with real-time blockchain data to create an engaging learning experience for beginners exploring Web3.
+Instead of simply reading about blockchain, users can:
+
+- Learn the differences between Web2 and Web3
+- Compare Ethereum and Bitcoin
+- Explore cryptographic concepts
+- View live cryptocurrency prices
+- Understand blockchain mining through an interactive simulator
+
+The project was built as part of the **Arbitrum Builder Pods** assignment.
 
 ---
 
@@ -30,102 +32,75 @@ The website combines educational content with real-time blockchain data to creat
 
 ## 🏠 Home
 
-- Beautiful Hero Section
-- Modern responsive design
-- Layer 2 overview
-- Feature highlights
+- Modern responsive landing page
+- Hero section
+- Layer 2 introduction
+- Arbitrum overview
 - Smooth animations
+- Responsive navigation
 
 ---
 
-## 📚 Concepts
+## 📚 Web3 Concepts
 
-Learn visually with comparison cards:
+Interactive comparison cards for:
 
 - Web2 vs Web3
 - Ethereum vs Bitcoin
 - Public Key vs Private Key
-- Blockchain vs Traditional Database
+- Blockchain vs Traditional Databases
 
 ---
 
-## 💰 Live Crypto Prices
+## 💰 Live Crypto Dashboard
 
-- Real-time CoinGecko API
-- BTC
-- ETH
-- ARB
-- POL
-- SOL
-- Refresh Button
-- 24-hour price changes
-- Status indicators
+Powered by the CoinGecko Public API.
+
+Features include:
+
+- Bitcoin (BTC)
+- Ethereum (ETH)
+- Arbitrum (ARB)
+- Polygon (POL)
+- Solana (SOL)
+
+✔ Live Prices
+
+✔ 24-hour Price Change
+
+✔ Refresh Button
+
+✔ Error Handling
 
 ---
 
 ## ⛏ Blockchain Simulator
 
-Interactive Proof-of-Work simulator demonstrating:
+Interactive blockchain simulator demonstrating:
 
-- Block data
+- Block Data
 - Previous Hash
 - Nonce
-- SHA-256 hashing
-- Mining simulation
-- Chain validation
-- Blockchain immutability
-
----
-
-# 🖼 Screenshots
-
-## Home
-
-![Home](screenshots/home.png)
-
----
-
-## Concepts
-
-![Concepts](screenshots/concepts.png)
-
----
-
-## Live Prices
-
-![Prices](screenshots/prices.png)
-
----
-
-## Block Simulator
-
-![Simulator](screenshots/simulator.png)
+- SHA-256 Hashing
+- Mining Process
+- Chain Validation
+- Blockchain Immutability
 
 ---
 
 # 🛠 Tech Stack
 
-Frontend
-
-- React 19
-- TypeScript
-- Vite
-
-Styling
-
-- Tailwind CSS
-- Framer Motion
-- Radix UI
-
-Libraries
-
-- TanStack Router
-- React Query
-- Lucide Icons
-
-API
-
-- CoinGecko Public API
+| Category | Technologies |
+|----------|--------------|
+| Frontend | React 19 |
+| Language | TypeScript |
+| Build Tool | Vite |
+| Routing | TanStack Router |
+| Styling | Tailwind CSS |
+| UI Components | Radix UI |
+| Animations | Framer Motion |
+| Data Fetching | React Query |
+| API | CoinGecko |
 
 ---
 
@@ -133,23 +108,36 @@ API
 
 ```text
 src/
- ├── components/
- ├── pages/
- ├── hooks/
- ├── lib/
- ├── assets/
- └── App.tsx
+│
+├── components/
+├── routes/
+├── hooks/
+├── lib/
+├── styles/
+└── assets/
 
 public/
-
-screenshots/
 
 README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# 📸 Screenshots
+
+> Screenshots will be added in the `screenshots/` folder.
+
+| Home | Concepts |
+|------|----------|
+| ![](screenshots/home.png) | ![](screenshots/concepts.png) |
+
+| Live Prices | Blockchain Simulator |
+|--------------|----------------------|
+| ![](screenshots/live-prices.png) | ![](screenshots/simulator.png) |
+
+---
+
+# 🚀 Installation
 
 Clone the repository
 
@@ -157,7 +145,7 @@ Clone the repository
 git clone https://github.com/ShravanDavda/arbitrum-web3.git
 ```
 
-Go into the project
+Navigate into the project
 
 ```bash
 cd arbitrum-web3
@@ -169,13 +157,13 @@ Install dependencies
 npm install
 ```
 
-Start development server
+Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open
+Open:
 
 ```
 http://localhost:5173
@@ -185,33 +173,27 @@ http://localhost:5173
 
 # 📋 Assignment Coverage
 
-✔ Responsive Landing Page
-
-✔ Educational Web3 Concepts
-
-✔ Live Cryptocurrency Dashboard
-
-✔ CoinGecko API Integration
-
-✔ Blockchain Mining Simulator
-
-✔ Shared Navigation
-
-✔ Responsive Design
-
-✔ Interactive UI
+- ✅ Responsive Landing Page
+- ✅ Shared Navigation
+- ✅ Web3 Concept Comparisons
+- ✅ Live Cryptocurrency Dashboard
+- ✅ CoinGecko API Integration
+- ✅ Blockchain Simulator
+- ✅ Responsive Design
+- ✅ Interactive UI
+- ✅ Modern Component Architecture
 
 ---
 
-# 🎯 Future Improvements
+# 🔮 Future Improvements
 
 - WalletConnect integration
 - MetaMask support
-- Live blockchain explorer
-- Transaction history
+- Dark / Light mode switch
+- Transaction explorer
 - NFT gallery
-- Dark / Light mode toggle
-- Multi-language support
+- Additional blockchain networks
+- Historical price charts
 
 ---
 
@@ -219,12 +201,16 @@ http://localhost:5173
 
 **Shravan Davda**
 
-GitHub
+GitHub: https://github.com/ShravanDavda
 
-https://github.com/ShravanDavda
+Project Repository:
+
+https://github.com/ShravanDavda/arbitrum-web3
 
 ---
 
-# ⭐ If you like this project
+<div align="center">
 
-Give it a ⭐ on GitHub.
+### ⭐ If you found this project interesting, consider giving it a star!
+
+</div>
