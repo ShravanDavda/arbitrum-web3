@@ -88,8 +88,8 @@ export function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} ArbChain · Built by a Builder Pods participant</p>
-          <p>Arbitrum Builder Pods · LamprosDAO Batch</p>
+          <p>© {new Date().getFullYear()} ArbChain · Built by Shravan Davda</p>
+          <p>MSU FTE CSE · Arbitrum Builder Pods · LamprosDAO Batch</p>
         </div>
       </div>
     </footer>
