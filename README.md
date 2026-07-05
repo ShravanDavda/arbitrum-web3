@@ -1,216 +1,167 @@
-<div align="center">
-
 # 🚀 ArbChain
 
-### Interactive Web3 Learning Platform
+> An interactive Web3 educational platform built to simplify blockchain concepts through real-time visualizations, live cryptocurrency prices, and a hands-on Proof-of-Work simulator.
 
-Explore blockchain technology through interactive visualizations, live cryptocurrency prices, educational comparisons, and a blockchain simulator.
-
-🌐 **Live Demo:** https://arbitrum-web3.vercel.app/
-
-</div>
+![Home](public/screenshots/home.png)
 
 ---
 
-## 📖 Overview
+## 🌐 Live Demo
 
-**ArbChain** is an interactive educational platform designed to make Web3 concepts easier to understand through beautiful visuals and hands-on learning.
+🔗 **Website:** https://arbitrum-web3.vercel.app/
 
-Instead of simply reading about blockchain, users can:
-
-- Learn the differences between Web2 and Web3
-- Compare Ethereum and Bitcoin
-- Explore cryptographic concepts
-- View live cryptocurrency prices
-- Understand blockchain mining through an interactive simulator
-
-The project was built as part of the **Arbitrum Builder Pods** assignment.
+🔗 **GitHub Repository:** https://github.com/ShravanDavda/arbitrum-web3
 
 ---
 
-# ✨ Features
+## 📖 About The Project
 
-## 🏠 Home
+ArbChain is an educational Web3 platform designed to help beginners understand blockchain technology through interactive learning instead of long theoretical explanations.
 
-- Modern responsive landing page
-- Hero section
-- Layer 2 introduction
-- Arbitrum overview
-- Smooth animations
-- Responsive navigation
+The application combines educational content with practical demonstrations, allowing users to:
 
----
+- Learn the difference between Web2 and Web3
+- Understand Ethereum and Arbitrum Layer 2
+- View live cryptocurrency market prices
+- Experience Proof-of-Work mining
+- Observe blockchain immutability by modifying mined blocks
 
-## 📚 Web3 Concepts
-
-Interactive comparison cards for:
-
-- Web2 vs Web3
-- Ethereum vs Bitcoin
-- Public Key vs Private Key
-- Blockchain vs Traditional Databases
+The project was developed as part of a Web3 Blockchain workshop.
 
 ---
 
-## 💰 Live Crypto Dashboard
+## ✨ Features
 
-Powered by the CoinGecko Public API.
-
-Features include:
-
-- Bitcoin (BTC)
-- Ethereum (ETH)
-- Arbitrum (ARB)
-- Polygon (POL)
-- Solana (SOL)
-
-✔ Live Prices
-
-✔ 24-hour Price Change
-
-✔ Refresh Button
-
-✔ Error Handling
+- 📚 Interactive Web3 Concepts
+- ⛓️ Blockchain Fundamentals
+- ⚡ Arbitrum Layer 2 Overview
+- 💰 Live Cryptocurrency Prices (CoinGecko API)
+- ⛏️ Interactive Proof-of-Work Simulator
+- 🔐 SHA-256 Hash Visualization
+- 📱 Fully Responsive UI
+- 🌙 Modern Glassmorphism Design
 
 ---
 
-## ⛏ Blockchain Simulator
+## 📸 Screenshots
 
-Interactive blockchain simulator demonstrating:
+### 🏠 Home
 
-- Block Data
-- Previous Hash
-- Nonce
+![Home](public/screenshots/home.png)
+
+---
+
+### 📚 Concepts
+
+![Concepts](public/screenshots/concepts.png)
+
+---
+
+### 💰 Live Prices
+
+![Live Prices](public/screenshots/live-prices.png)
+
+---
+
+### ⛏️ Blockchain Simulator
+
+![Simulator](public/screenshots/simulator.png)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- TanStack Router
+- Tailwind CSS
+- Framer Motion
+
+### APIs
+
+- CoinGecko API
+
+### Blockchain Concepts
+
+- Web3
+- Ethereum
+- Arbitrum
+- Layer 2 Scaling
+- Proof-of-Work
 - SHA-256 Hashing
-- Mining Process
-- Chain Validation
-- Blockchain Immutability
 
 ---
 
-# 🛠 Tech Stack
-
-| Category | Technologies |
-|----------|--------------|
-| Frontend | React 19 |
-| Language | TypeScript |
-| Build Tool | Vite |
-| Routing | TanStack Router |
-| Styling | Tailwind CSS |
-| UI Components | Radix UI |
-| Animations | Framer Motion |
-| Data Fetching | React Query |
-| API | CoinGecko |
-
----
-
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 src/
-│
-├── components/
-├── routes/
-├── hooks/
-├── lib/
-├── styles/
-└── assets/
+ ├── components/
+ ├── routes/
+ ├── hooks/
+ ├── lib/
+ └── styles/
 
 public/
-
-README.md
+ ├── screenshots/
+ ├── favicon.svg
+ └── favicon.ico
 ```
 
 ---
 
-# 📸 Screenshots
-
-> Screenshots will be added in the `screenshots/` folder.
-
-| Home | Concepts |
-|------|----------|
-| ![](screenshots/home.png) | ![](screenshots/concepts.png) |
-
-| Live Prices | Blockchain Simulator |
-|--------------|----------------------|
-| ![](screenshots/live-prices.png) | ![](screenshots/simulator.png) |
-
----
-
-# 🚀 Installation
-
-Clone the repository
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/ShravanDavda/arbitrum-web3.git
-```
 
-Navigate into the project
-
-```bash
 cd arbitrum-web3
-```
 
-Install dependencies
-
-```bash
 npm install
-```
 
-Start the development server
-
-```bash
 npm run dev
 ```
 
-Open:
+---
 
-```
-http://localhost:5173
-```
+## 🚀 Deployment
+
+The project is deployed on **Vercel**.
+
+Live Website:
+
+https://arbitrum-web3.vercel.app/
 
 ---
 
-# 📋 Assignment Coverage
+## 🎯 Future Improvements
 
-- ✅ Responsive Landing Page
-- ✅ Shared Navigation
-- ✅ Web3 Concept Comparisons
-- ✅ Live Cryptocurrency Dashboard
-- ✅ CoinGecko API Integration
-- ✅ Blockchain Simulator
-- ✅ Responsive Design
-- ✅ Interactive UI
-- ✅ Modern Component Architecture
+- Wallet Connection
+- Smart Contract Integration
+- Testnet Transactions
+- Interactive Quizzes
+- NFT Demonstrations
+- Gas Fee Calculator
 
 ---
 
-# 🔮 Future Improvements
-
-- WalletConnect integration
-- MetaMask support
-- Dark / Light mode switch
-- Transaction explorer
-- NFT gallery
-- Additional blockchain networks
-- Historical price charts
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Shravan Davda**
 
-GitHub: https://github.com/ShravanDavda
+GitHub:
 
-Project Repository:
-
-https://github.com/ShravanDavda/arbitrum-web3
+https://github.com/ShravanDavda
 
 ---
 
-<div align="center">
+## ⭐ Acknowledgements
 
-### ⭐ If you found this project interesting, consider giving it a star!
-
-</div>
+- Arbitrum
+- CoinGecko API
+- React
+- TanStack
+- Vercel
