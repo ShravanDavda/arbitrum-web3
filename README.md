@@ -1,85 +1,230 @@
-# ArbChain — Understanding Web3 with Arbitrum
+# 🚀 ArbChain – Interactive Web3 Learning Platform
 
-A premium, production-quality educational Web3 website built for the **Arbitrum Builder Pods by LamprosDAO** assignment. It combines a landing page, visual concept explainers, a live crypto price dashboard, and an interactive proof-of-work blockchain simulator — all in a single cohesive dark-themed experience inspired by Stripe, Coinbase, Vercel, and Ethereum.org.
+> Learn Blockchain visually through live crypto prices, Web3 concepts, and an interactive blockchain simulator.
 
-## ✨ Features
+![React](https://img.shields.io/badge/React-19-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+![Vite](https://img.shields.io/badge/Vite-7-purple)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-- 🎨 Futuristic dark theme with glassmorphism, gradient blobs and animated grid background
-- 🧭 Sticky glass navigation with animated active-page indicator
-- 📈 Scroll progress bar and floating back-to-top button
-- 🌀 Framer Motion page transitions, hover, and reveal animations
-- 🧱 Animated blockchain orb illustration on the hero
-- 🔗 Live crypto prices from CoinGecko (no API key)
-- ⛏️ Real SHA-256 proof-of-work mining simulator using the Web Crypto API
-- 💥 Live chain-integrity feedback — edit Block 1 and Block 2 instantly turns INVALID
-- ♿ Semantic HTML, keyboard focus states, ARIA labels
-- 📱 Fully responsive from mobile to ultra-wide
+---
 
-## 🧰 Tech Stack
+## 🌐 Live Demo
 
-- **React 19** + **TypeScript**
-- **Vite** + **TanStack Start / TanStack Router** (file-based routing)
-- **Tailwind CSS v4** (CSS-first design tokens)
-- **shadcn/ui** primitives
-- **Framer Motion** for animations
-- **Lucide React** icons
-- **CoinGecko public API** for market data
-- **Web Crypto API** (`crypto.subtle.digest`) for SHA-256
+🔗 https://arbitrum-web3.lovable.app
 
-## 📄 Pages
+> (Later we'll replace this with the Vercel link.)
 
-| Route | Page | What it does |
-|-------|------|--------------|
-| `/` | **Home** | Hero, animated blockchain visual, stats, features, "Why Ethereum needed L2", "What is Arbitrum?", timeline, FAQ, CTA. |
-| `/concepts` | **Concepts** | 7 side-by-side comparison cards + tables: Web2 vs Web3, ETH vs BTC, Public vs Private keys, Blockchain vs DB, Wallet vs Bank, Smart vs Legal Contracts, PoW vs PoS. |
-| `/prices` | **Live Prices** | Live BTC, ETH, ARB, MATIC, SOL prices with 24h change, green/red trend indicators, loading skeletons, refresh button, last-updated timestamp. |
-| `/simulator` | **Blockchain Simulator** | Two linked blocks. Edit data → mine (nonce increments until SHA-256 starts with `00`) → chain visualizes VALID / INVALID in real time. Tampering with Block 1 immediately invalidates Block 2. |
+---
 
-## 🚀 Getting Started
+# 📖 About
+
+ArbChain is a modern educational Web3 platform built to simplify blockchain concepts through interactive visualizations instead of static text.
+
+The website combines educational content with real-time blockchain data to create an engaging learning experience for beginners exploring Web3.
+
+---
+
+# ✨ Features
+
+## 🏠 Home
+
+- Beautiful Hero Section
+- Modern responsive design
+- Layer 2 overview
+- Feature highlights
+- Smooth animations
+
+---
+
+## 📚 Concepts
+
+Learn visually with comparison cards:
+
+- Web2 vs Web3
+- Ethereum vs Bitcoin
+- Public Key vs Private Key
+- Blockchain vs Traditional Database
+
+---
+
+## 💰 Live Crypto Prices
+
+- Real-time CoinGecko API
+- BTC
+- ETH
+- ARB
+- POL
+- SOL
+- Refresh Button
+- 24-hour price changes
+- Status indicators
+
+---
+
+## ⛏ Blockchain Simulator
+
+Interactive Proof-of-Work simulator demonstrating:
+
+- Block data
+- Previous Hash
+- Nonce
+- SHA-256 hashing
+- Mining simulation
+- Chain validation
+- Blockchain immutability
+
+---
+
+# 🖼 Screenshots
+
+## Home
+
+![Home](screenshots/home.png)
+
+---
+
+## Concepts
+
+![Concepts](screenshots/concepts.png)
+
+---
+
+## Live Prices
+
+![Prices](screenshots/prices.png)
+
+---
+
+## Block Simulator
+
+![Simulator](screenshots/simulator.png)
+
+---
+
+# 🛠 Tech Stack
+
+Frontend
+
+- React 19
+- TypeScript
+- Vite
+
+Styling
+
+- Tailwind CSS
+- Framer Motion
+- Radix UI
+
+Libraries
+
+- TanStack Router
+- React Query
+- Lucide Icons
+
+API
+
+- CoinGecko Public API
+
+---
+
+# 📂 Project Structure
+
+```text
+src/
+ ├── components/
+ ├── pages/
+ ├── hooks/
+ ├── lib/
+ ├── assets/
+ └── App.tsx
+
+public/
+
+screenshots/
+
+README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
 
 ```bash
-# install dependencies
-npm install    # or: bun install
-
-# start the dev server
-npm run dev    # http://localhost:8080
-
-# production build
-npm run build
-npm run preview
+git clone https://github.com/ShravanDavda/arbitrum-web3.git
 ```
 
-## 📁 Folder Structure
+Go into the project
 
-```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx           # sticky glass navbar with animated active pill
-│   │   ├── Footer.tsx           # site footer with links + credits
-│   │   ├── Background.tsx       # animated gradient blobs + grid
-│   │   ├── ScrollProgress.tsx   # top progress bar
-│   │   └── BackToTop.tsx        # floating scroll-to-top button
-│   ├── BlockchainOrb.tsx        # animated hero illustration
-│   └── ui/                      # shadcn primitives
-├── routes/
-│   ├── __root.tsx               # shell, providers, transitions
-│   ├── index.tsx                # Home
-│   ├── concepts.tsx             # Concepts
-│   ├── prices.tsx               # Live Prices
-│   └── simulator.tsx            # Blockchain Simulator
-├── styles.css                   # Tailwind v4 design tokens
-└── router.tsx
+```bash
+cd arbitrum-web3
 ```
 
-## 🔮 Future Improvements
+Install dependencies
 
-- Persist mined blocks in `localStorage` and let users extend the chain beyond two blocks
-- Add sparkline mini-charts to the price cards
-- Add a wallet-connect demo (WalletConnect / RainbowKit) that reads an on-chain balance from Arbitrum
-- Add a dark/light theme toggle
-- Deploy to Vercel with edge caching for the CoinGecko fetch
+```bash
+npm install
+```
 
-## 👤 Credits
+Start development server
 
-Built as part of the **Arbitrum Builder Pods** program by **LamprosDAO**. Educational content written from first principles based on the program materials.
+```bash
+npm run dev
+```
+
+Open
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📋 Assignment Coverage
+
+✔ Responsive Landing Page
+
+✔ Educational Web3 Concepts
+
+✔ Live Cryptocurrency Dashboard
+
+✔ CoinGecko API Integration
+
+✔ Blockchain Mining Simulator
+
+✔ Shared Navigation
+
+✔ Responsive Design
+
+✔ Interactive UI
+
+---
+
+# 🎯 Future Improvements
+
+- WalletConnect integration
+- MetaMask support
+- Live blockchain explorer
+- Transaction history
+- NFT gallery
+- Dark / Light mode toggle
+- Multi-language support
+
+---
+
+# 👨‍💻 Author
+
+**Shravan Davda**
+
+GitHub
+
+https://github.com/ShravanDavda
+
+---
+
+# ⭐ If you like this project
+
+Give it a ⭐ on GitHub.
