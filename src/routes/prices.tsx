@@ -19,11 +19,12 @@ const COINS: CoinMeta[] = [
   { id: "bitcoin",   symbol: "BTC",   name: "Bitcoin",  color: "#F7931A" },
   { id: "ethereum",  symbol: "ETH",   name: "Ethereum", color: "#627EEA" },
   { id: "arbitrum",  symbol: "ARB",   name: "Arbitrum", color: "#28A0F0" },
-  { id: "matic-network", symbol: "MATIC", name: "Polygon", color: "#8247E5" },
+  { id: "polygon-ecosystem-token", symbol: "POL", name: "Polygon", color: "#8247E5" },
   { id: "solana",    symbol: "SOL",   name: "Solana",   color: "#14F195" },
 ];
 
-type PriceMap = Record<string, { usd: number; usd_24h_change: number } | undefined>;
+type PriceEntry = { usd?: number; usd_24h_change?: number };
+type PriceMap = Record<string, PriceEntry | undefined>;
 
 function PricesPage() {
   const [prices, setPrices] = useState<PriceMap>({});
@@ -128,7 +129,7 @@ function PricesPage() {
                       <div className="h-9 w-3/4 rounded-md bg-white/5 animate-pulse" />
                       <div className="h-5 w-1/3 rounded-md bg-white/5 animate-pulse" />
                     </div>
-                  ) : p ? (
+                  ) : p && typeof p.usd === "number" ? (
                     <>
                       <div className="mt-6 text-3xl font-bold font-display tracking-tight">
                         ${p.usd.toLocaleString(undefined, {
@@ -136,10 +137,10 @@ function PricesPage() {
                           maximumFractionDigits: p.usd < 10 ? 4 : 2,
                         })}
                       </div>
-                      <ChangeBadge change={p.usd_24h_change} />
+                      <ChangeBadge change={p.usd_24h_change ?? 0} />
                     </>
                   ) : (
-                    <div className="mt-6 text-sm text-muted-foreground">No data.</div>
+                    <div className="mt-6 text-sm text-muted-foreground">Data unavailable.</div>
                   )}
                 </div>
               </motion.div>
