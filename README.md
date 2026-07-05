@@ -1,77 +1,145 @@
-# 🚀 ArbChain
+<p align="center">
+  <img src="public/screenshots/banner.png" width="100%" alt="ArbChain Banner"/>
+</p>
 
-> An interactive Web3 educational platform built to simplify blockchain concepts through real-time visualizations, live cryptocurrency prices, and a hands-on Proof-of-Work simulator.
+<h1 align="center">
+🚀 ArbChain
+</h1>
 
-![Home](public/screenshots/home.png)
+<p align="center">
+<b>An Interactive Web3 Learning Platform built around Arbitrum Layer 2.</b>
+</p>
 
----
+<p align="center">
 
-## 🌐 Live Demo
+<a href="https://arbitrum-web3.vercel.app">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-8B5CF6?style=for-the-badge">
+</a>
 
-🔗 **Website:** https://arbitrum-web3.vercel.app/
+<a href="https://github.com/ShravanDavda/arbitrum-web3">
+<img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github">
+</a>
 
-🔗 **GitHub Repository:** https://github.com/ShravanDavda/arbitrum-web3
-
----
-
-## 📖 About The Project
-
-ArbChain is an educational Web3 platform designed to help beginners understand blockchain technology through interactive learning instead of long theoretical explanations.
-
-The application combines educational content with practical demonstrations, allowing users to:
-
-- Learn the difference between Web2 and Web3
-- Understand Ethereum and Arbitrum Layer 2
-- View live cryptocurrency market prices
-- Experience Proof-of-Work mining
-- Observe blockchain immutability by modifying mined blocks
-
-The project was developed as part of a Web3 Blockchain workshop.
+</p>
 
 ---
 
-## ✨ Features
+# 🌟 Overview
 
-- 📚 Interactive Web3 Concepts
-- ⛓️ Blockchain Fundamentals
-- ⚡ Arbitrum Layer 2 Overview
-- 💰 Live Cryptocurrency Prices (CoinGecko API)
-- ⛏️ Interactive Proof-of-Work Simulator
-- 🔐 SHA-256 Hash Visualization
-- 📱 Fully Responsive UI
-- 🌙 Modern Glassmorphism Design
+**ArbChain** is an interactive educational platform that makes learning **Web3**, **Ethereum**, and **Arbitrum Layer 2** intuitive through visual explanations, real-time cryptocurrency data, and a hands-on blockchain simulator.
+
+Rather than reading long documentation, users learn blockchain concepts by interacting with them.
+
+Developed as part of a **Web3 Blockchain Workshop**, the project demonstrates both blockchain concepts and modern frontend engineering.
 
 ---
 
-## 📸 Screenshots
+# ✨ Features
 
-### 🏠 Home
+## 📚 Learn Web3 Visually
 
-![Home](public/screenshots/home.png)
-
----
-
-### 📚 Concepts
-
-![Concepts](public/screenshots/concepts.png)
+- Beginner-friendly explanations
+- Interactive concept cards
+- Modern UI with smooth animations
 
 ---
 
-### 💰 Live Prices
+## ⚖️ Web2 vs Web3 Comparison
 
-![Live Prices](public/screenshots/live-prices.png)
+Understand the key differences between:
+
+- Ownership
+- Authentication
+- Storage
+- Trust
+- Payments
+- Governance
 
 ---
 
-### ⛏️ Blockchain Simulator
+## ⛓ Learn Arbitrum Layer 2
 
-![Simulator](public/screenshots/simulator.png)
+Explore
+
+- Ethereum scaling
+- Rollups
+- Layer 2 architecture
+- Why Arbitrum exists
+- Transaction flow
 
 ---
 
-## 🛠️ Tech Stack
+## 📈 Live Cryptocurrency Prices
 
-### Frontend
+Powered by the CoinGecko API.
+
+Displays real-time prices of:
+
+- Bitcoin
+- Ethereum
+- Arbitrum
+- Polygon
+- Solana
+
+Includes
+
+- 24-hour change
+- Live refresh
+- Market updates
+
+---
+
+## ⚡ Interactive Blockchain Simulator
+
+A hands-on SHA-256 mining simulator where users can
+
+- Edit transactions
+- Mine blocks
+- Observe Proof-of-Work
+- Break blockchain integrity
+- Restore chain validity
+
+This provides an intuitive understanding of blockchain immutability.
+
+---
+
+# 🖼 Screenshots
+
+## 🏠 Home
+
+<p align="center">
+<img src="public/screenshots/home.png" width="95%">
+</p>
+
+---
+
+## 📚 Concepts
+
+<p align="center">
+<img src="public/screenshots/concepts.png" width="95%">
+</p>
+
+---
+
+## 📈 Live Prices
+
+<p align="center">
+<img src="public/screenshots/live-prices.png" width="95%">
+</p>
+
+---
+
+## ⚡ Blockchain Simulator
+
+<p align="center">
+<img src="public/screenshots/simulator.png" width="95%">
+</p>
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
 
 - React
 - TypeScript
@@ -80,88 +148,144 @@ The project was developed as part of a Web3 Blockchain workshop.
 - Tailwind CSS
 - Framer Motion
 
-### APIs
+## APIs
 
 - CoinGecko API
 
-### Blockchain Concepts
+## Deployment
 
-- Web3
-- Ethereum
-- Arbitrum
-- Layer 2 Scaling
-- Proof-of-Work
-- SHA-256 Hashing
+- Vercel
 
 ---
 
-## 📂 Project Structure
+# 📂 Folder Structure
 
 ```text
-src/
- ├── components/
- ├── routes/
- ├── hooks/
- ├── lib/
- └── styles/
-
 public/
- ├── screenshots/
- ├── favicon.svg
- └── favicon.ico
+│
+├── favicon.svg
+├── favicon.ico
+└── screenshots/
+    ├── banner.png
+    ├── home.png
+    ├── concepts.png
+    ├── live-prices.png
+    └── simulator.png
+
+src/
+│
+├── components/
+├── hooks/
+├── lib/
+├── routes/
+├── styles/
+└── assets/
 ```
 
 ---
 
-## ⚙️ Installation
+# 🚀 Running Locally
+
+Clone the repository
 
 ```bash
 git clone https://github.com/ShravanDavda/arbitrum-web3.git
+```
 
+Move inside the project
+
+```bash
 cd arbitrum-web3
+```
 
+Install dependencies
+
+```bash
 npm install
+```
 
+Run development server
+
+```bash
 npm run dev
 ```
 
----
+Open
 
-## 🚀 Deployment
+```
+http://localhost:3000
+```
 
-The project is deployed on **Vercel**.
-
-Live Website:
-
-https://arbitrum-web3.vercel.app/
+(or the port displayed by Vite)
 
 ---
 
-## 🎯 Future Improvements
+# 🎯 Learning Outcomes
 
-- Wallet Connection
-- Smart Contract Integration
-- Testnet Transactions
-- Interactive Quizzes
-- NFT Demonstrations
-- Gas Fee Calculator
+This project demonstrates
+
+- Blockchain fundamentals
+- Web3 architecture
+- Ethereum ecosystem
+- Arbitrum Layer 2
+- Proof-of-Work
+- SHA-256 hashing
+- Blockchain immutability
+- Real-time API integration
+- Responsive frontend development
 
 ---
 
-## 👨‍💻 Author
+# 🚀 Future Improvements
 
-**Shravan Davda**
+- MetaMask wallet connection
+- Smart contract integration
+- NFT demonstration
+- Token transfer simulator
+- Gas fee visualizer
+- Interactive quizzes
+- User authentication
+- Progress tracking
+- Multi-language support
 
-GitHub:
+---
+
+# 👨‍💻 Author
+
+### Shravan Davda
+
+GitHub
 
 https://github.com/ShravanDavda
 
 ---
 
-## ⭐ Acknowledgements
+# 🙏 Acknowledgements
+
+This project was inspired by the Web3 learning ecosystem and built using amazing open-source tools.
+
+Special thanks to
 
 - Arbitrum
-- CoinGecko API
+- CoinGecko
 - React
-- TanStack
+- TanStack Router
+- Tailwind CSS
+- Framer Motion
 - Vercel
+
+---
+
+# ⭐ Support
+
+If you enjoyed this project or found it useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
+
+---
+
+<p align="center">
+
+<b>Built with ❤️ for the Web3 community.</b>
+
+</p>
